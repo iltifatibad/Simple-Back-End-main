@@ -1,0 +1,20 @@
+[package]
+name = "Web-Site"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.1.0"
+actix-files = "*"
+dotenv = "0.15.0"
+env_logger = "0.9.0"
+log = "0.4.17"
+tera = "1.16.0"
+serde = {version = "*", features = ["derive"]}
+actix-session = {version="0.6.2", features= ["cookie-session"]}
+actix-redis = "0.11.0"
+sqlx = {version="0.6", features = ["runtime-actix-rustls","sqlite"]}
+validator = { version = "0.15", features = ["derive"] }
+bcrypt = "0.13.0"
